@@ -1,0 +1,25 @@
+/* ========== Footer Styles ========== */
+
+/* Links im Footer */
+footer a {
+  text-decoration: none; /* Entfernt Unterstreichung */
+}
+
+footer a:hover {
+  color: red!important;/* Hellere Farbe beim Hover */
+} 
+
+/* Social Media Icons im Footer */
+footer .fa-2x {
+  margin: 0 10px; /* Horizontaler Abstand zwischen Icons */
+  transition: transform 0.3s ease; /* Sanfte Skalierung */
+}
+
+footer .fa-2x:hover {
+  transform: scale(1.2); /* Icons leicht vergrößern beim Hover */
+}
+
+/* Copyright-Bereich */
+footer .text-center {
+  margin-top: 2em; /* Abstand nach oben */
+}

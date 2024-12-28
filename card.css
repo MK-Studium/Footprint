@@ -1,0 +1,79 @@
+/* ========== Karten-Layout ========== */
+
+/* Grundlayout für Kartenelemente */
+/* Flexbox-Layout für vertikale Anordnung und Verteilung der Inhalte */
+.card {
+  display: flex; /* Aktiviert Flexbox für die Karte */
+  flex-direction: column; /* Elemente werden vertikal in einer Spalte angeordnet */
+  justify-content: space-between; /* Elemente werden gleichmäßig verteilt (Start und Ende) */
+}
+
+/* ========== Bilder in der Karte ========== */
+
+/* Styling für Bilder in Karten, die oben angezeigt werden */
+.card-img-top {
+  max-width: 150px; /* Begrenzung der Bildbreite */
+  max-height: 150px; /* Begrenzung der Bildhöhe */
+  object-fit: cover; /* Verhindert Verzerrung und schneidet das Bild zu, um den Container zu füllen */
+  border-radius: 50%; /* Rundes Bild durch Abrunden der Ecken */
+}
+
+/* ========== Titel und Text in der Karte ========== */
+
+/* Stile für Kartentitel */
+.card-title {
+  font-size: 1rem; /* Kleinere Schriftgröße für Titel */
+  margin-bottom: 0.5rem; /* Geringerer Abstand nach unten */
+}
+
+/* Stile für Kartentext */
+.card-text {
+  font-size: 0.875rem; /* Kleinere Schriftgröße für zusätzlichen Text */
+  margin-bottom: 1rem; /* Konsistenter Abstand nach unten zum nächsten Element */
+}
+
+/* ========== Buttons in der Karte ========== */
+
+/* Grundlegende Button-Stile */
+.btn {
+  width: auto; /* Automatische Breite, angepasst an den Inhalt */
+  padding: 0.25rem 0.5rem; /* Innenabstand für bessere Lesbarkeit */
+  /* FEHLER BEHOBEN: Fehlendes Semikolon hinzugefügt */
+}
+
+/* Spezielle Stile für kleinere Buttons */
+.btn-sm {
+  font-size: 0.75rem; /* Kleinere Schriftgröße für kleinere Buttons */
+  padding: 0.25rem 0.5rem; /* Reduzierter Innenabstand */
+  line-height: 1.5; /* Vertikale Ausrichtung des Inhalts */
+}
+
+/* Buttons mit Outline-Design */
+/* Buttons ohne Hintergrundfarbe, nur mit Rahmen */
+.btn-outline-primary {
+  font-size: 0.875rem; /* Konsistente Schriftgröße für Outline-Buttons */
+}
+
+/* ========== Social Media Icons in der Karte ========== */
+
+/* Container für Social Media Links (z.B. LinkedIn) */
+.profile-card .social-links a {
+  font-size: 1.5rem; /* Größe der Social Media Icons */
+  margin: 0 10px; /* Horizontaler Abstand zwischen den Icons */
+  color: #0a66c2; /* LinkedIn-Blau als Standardfarbe */
+  transition: color 0.3s ease; /* Sanfter Farbwechsel beim Hover */
+}
+
+/* Hover-Effekt für Social Media Links */
+/* Ändert die Farbe der Icons beim Darüberfahren */
+.profile-card .social-links a:hover {
+  color: blue; /* Dunkleres Blau für bessere Sichtbarkeit beim Hover */
+}
+
+/* ========== Bilder in Partnerkarten ========== */
+
+/* Bilder in der Partner-Karte */
+.partner-card img {
+  height: 150px; /* Festgelegte Höhe für die Bilder */
+  object-fit: cover; /* Stellt sicher, dass das Bild den Container proportional ausfüllt */
+}

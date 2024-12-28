@@ -1,0 +1,40 @@
+/* ========== Table Styles ========== */
+
+/* Grundlegende Tabellenstile */
+/* Definiert die Höhe, maximale Höhe und das abgerundete Design der Tabelle */
+.table {
+  height: 450px; /* Feste Höhe der Tabelle */
+  max-height: 450px; /* Maximale Höhe zur Begrenzung des Inhalts */
+  border-radius: 25px; /* Abgerundete Ecken für ein modernes Design */
+}
+
+/* Stile für Tabellen mit fixer Layoutbreite */
+/* Beibehaltung eines festen Tabellenlayouts */
+.table-fixed-layout {
+  table-layout: fixed; /* Spaltenbreite wird aufgeteilt und bleibt konstant */
+  width: 100%; /* Tabelle füllt die gesamte verfügbare Breite */
+}
+
+/* Container für die Tabelle */
+/* Flexibles Layout für die Tabellenumgebung */
+.table-container {
+  display: flex; /* Flexbox für flexibles Layout */
+  flex-direction: column; /* Elemente innerhalb des Containers vertikal anordnen */
+  flex-grow: 1; /* Tabelle nimmt den verfügbaren Platz ein */
+  overflow: auto; /* Scrollen wird aktiviert, wenn der Inhalt größer ist als der Container */
+}
+
+/* Stile für Tabellenzellen */
+/* Anpassung der Zellinhalte für bessere Lesbarkeit */
+.table-container th, .table-container td {
+  hyphens: auto; /* Automatische Silbentrennung bei langen Wörtern */
+  word-wrap: break-word; /* Lange Wörter werden umgebrochen, um Überlauf zu vermeiden */
+  white-space: normal; /* Zeilenumbrüche werden erlaubt */
+  text-align: center; /* Optional: Zentriert den Text in den Zellen */
+}
+
+/* Leere Zeilen auffüllen */
+.table tbody tr.empty-row {
+  height: 40px; /* Höhe für die Leerzeilen */
+  background-color: #f9f9f9; /* Optional: leicht abweichender Hintergrund für Leerzeilen */
+}

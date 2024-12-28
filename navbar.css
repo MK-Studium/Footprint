@@ -1,0 +1,70 @@
+/* ========== Navbar und Ausrichtung Styles ========== */
+
+/* Standard: LTR-Ausrichtung (Logo nach rechts) */
+/* Verschiebt das Logo an den rechten Rand in LTR-Sprachen */
+.navbar .navbar-brand.logo {
+  margin-left: auto; /* Automatischer Abstand nach links */
+  margin-right: 0; /* Kein zusätzlicher Abstand nach rechts */
+}
+
+/* RTL-Ausrichtung (Logo nach links) */
+/* Spezifische Stile für RTL-Sprachen */
+.navbar[dir="rtl"] .navbar-brand.logo {
+  margin-left: 0;   /* Kein zusätzlicher Abstand nach links */
+  margin-right: auto; /* Automatischer Abstand nach rechts */
+}
+
+/* Zusätzliche Stile für RTL-Navbars */
+/* Stellt die gesamte Navbar auf RTL-Ausrichtung um */
+.navbar.rtl-enabled {
+  direction: rtl; /* Richtet den gesamten Inhalt von rechts nach links aus */
+  text-align: right; /* Textinhalte werden rechtsbündig ausgerichtet */
+}
+
+/* ========== Header Overlay-Z-Index ========== */
+/* Navbar und Hero-Inhalt sichtbar über einem Overlay */
+#home-header nav,
+#home-header .hero {
+  position: relative; /* Stellt sicher, dass der Inhalt relativ positioniert ist */
+  z-index: 2; /* Legt die Elemente über ein mögliches Overlay */
+}
+
+/* ========== Navigationsleiste ========== */
+/* Haupt-Navbar-Design */
+.navbar {
+  padding: 1rem; /* Innenabstand oben und unten */
+  background-color: rgba(0, 0, 0, 0.4); /* Transparenter schwarzer Hintergrund */
+}
+
+/* ========== Navigationselemente ========== */
+/* Allgemeine Stile für die Navigations-Buttons */
+.nav-btn {
+  border: 2px solid rgb(255, 255, 255); /* Weißer Rahmen um den Button */
+  padding: 0.5rem 1rem; /* Innenabstand für den Button */
+  font-weight: bold; /* Fettschrift für Text */
+  transition: all 0.3s ease; /* Sanfter Übergang für Hover-Effekte */
+  border-radius: 25px; /* Abgerundete Kanten */
+  margin-right: 1rem; /* Abstand zwischen den Buttons */
+  color: white; /* Standard-Textfarbe */
+  background: transparent; /* Transparenter Hintergrund für Buttons */
+}
+
+/* Hover-Effekte für die Navigations-Buttons */
+/* Verhalten beim Darüberfahren mit der Maus */
+.nav-btn:hover {
+  color: white; /* Textfarbe bleibt Weiß */
+  transform: scale(1.1); /* Button vergrößert sich leicht */
+  box-shadow: 0px 4px 10px rgba(0, 110, 0, 0.5); /* Grüner, transparenter Schatten */
+  cursor: pointer; /* Zeigerform für Interaktivität */
+}
+
+/* Navbar bleibt oben fixiert */
+#statistik-navbar {
+  flex-shrink: 0; /* Verhindert, dass die Navbar schrumpft */
+}
+
+/* Logo */
+.navbar-brand img {
+  max-height: 75px; /* Maximale Höhe des Logos */
+  width: auto;
+}

@@ -1,0 +1,764 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+  <!-- 
+    Metadaten 
+  -->
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Metadaten : Beschreibung der Website für Suchmaschinen -->
+  <meta name="description" content="GRoW - Deine gemeinnützige non-profit Organisation, die sich mit dem weltweiten Klimawandel beschäftigt">
+  
+  <!-- Metadaten : Schlüsselwörter für Suchmaschinenoptimierung  -->
+  <meta name="keywords" content="Klimaschutz, Nachhaltigkeit, CO2, Umwelt">
+
+  <!-- 
+    Einbindung von Schriftarten und Stylesheets
+  -->
+  
+  <!-- Einbindung der Schriftart Roboto -->
+  <link rel="stylesheet" type="text/css" href="./font/roboto/_roboto.css">
+  
+  <!-- Einbindung eines benutzerdefinierten Stylesheets für allgemeine Stile -->
+  <link rel="stylesheet" href="./styles.css">
+
+  <!-- Einbindung Stylesheets für verschiedene Bildschirmgrößen -->
+  <link rel="stylesheet" href="./media-size.css">
+
+  <!-- Einbindung Stylesheets für die Cards -->
+  <link rel="stylesheet" href="./card.css">
+
+  <!-- Eibindung Stylesheets für die Tabelle -->
+  <link rel="stylesheet" href="./table.css">
+
+  <!-- Einbindng Stylesheeets für die Navbars -->
+  <link rel="stylesheet" href="./navbar.css">
+
+  <!-- Einbindng Stylesheeets für Footer -->
+  <link rel="stylesheet" href="./footer.css">
+
+  <!-- Einbindng Stylesheeets für das Formular -->
+  <link rel="stylesheet" href="./formular.css">
+
+  
+
+  
+  <!-- Einbindung Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  
+  <!-- Bootstrap JavaScript Bundle für interaktive Komponenten -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+  <!-- FontAwesome Icons für visuelle Elemente wie Symbole for Free-->
+  <script src="https://kit.fontawesome.com/001b259bcb.js" crossorigin="anonymous"></script>
+
+  <!-- Einbindung von Vue.js für dynamische Tabelle -->
+  <script src="https://cdn.jsdelivr.net/npm/vue@3/dist/vue.global.js"></script>
+  
+  <!-- Einbindung von js.Dateien -->
+  <script src="./contact.js"></script> 
+  <script src="./dummy.js"></script>  
+  <script src="./navbar.js"></script>
+  <script src="./partner.js" defer></script>
+  <script src="./language.js"></script>
+  <script src="./mitarbeiter.js"></script>  
+
+  <!-- Titel der Website, der im Browser-Tab angezeigt wird -->
+  <title>Home - GRoW</title>
+</head>
+
+<body>
+
+  <!-- Header mit Navigation -->
+<header id="home-header">
+  <!-- Navigationsleiste mit Bootstrap -->
+  <nav class="navbar navbar-expand-lg navbar-dark static-navbar" id="home-navbar">
+    <div class="container-fluid">
+      
+      <!-- Markenname -->
+      <a class="navbar-brand roboto-bold fs-3" href="">GRoW</a>
+  
+      <!-- Hamburger-Menü -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+  
+      <!-- Navigationselemente -->
+      <div class="collapse navbar-collapse justify-content-between align-items-center" id="navbarNav">
+        
+        <!-- Mittige Navigation -->
+        <ul class="navbar-nav mx-auto">
+          <li class="nav-item">
+            <a class="nav-link btn nav-btn fs-4" href="#aboutUs">Über uns</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link btn nav-btn fs-4" href="#statistik">Statistiken</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link btn nav-btn fs-4" href="#kontakt">Kontakt</a>
+          </li>
+        </ul>
+  
+        <!-- Logo auf der rechten Seite -->
+        <a class="navbar-brand d-none d-lg-block" href="#home-header">
+          <img src="./img/Logo_Natur3t.png" alt="Logo der Website" class="img-fluid" width="75" height="75">
+        </a>
+      </div>    
+    </div>
+  </nav>
+    
+  <!-- Hero-Bereich -->
+  <section class="hero text-light text-center d-flex flex-column justify-content-center align-items-center">
+    <h1 class="hero-title roboto-bold">GRoW</h1>
+    <h3 class="hero-subtitle">
+      <span class="fw-bold text-success">G</span>reen,
+      <span class="fw-bold text-success">R</span>esilient, 
+      <span class="fw-bold text-success">o</span>ur
+      <span class="fw-bold text-success">W</span>orld
+    </h3>
+  </section>
+</header>  
+
+<!-- Hauptinhalt der Website -->
+<main>
+
+<!-- aboutUS mit Navigation -->
+  <section id="aboutUs">
+
+  <!-- Dynamische Navbar je nach Bedarf automatisch LTR oder RTL -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-success sticky-top" id="aboutUs-navbar" data-rtl="true">
+    <div class="container-fluid">
+
+      <!-- Markenname -->
+      <a class="navbar-brand roboto-bold fs-3" href="#home-header">GRoW</a>
+  
+      <!-- Hamburger-Menü -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarAboutUs" aria-controls="navbarAboutUs" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+  
+      <!-- Navigationselemente -->
+      <div class="collapse navbar-collapse" id="navbarAboutUs">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link btn nav-btn fs-4" href="#our-mission">Unsere Mission</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link btn nav-btn fs-4" href="#about-co2">Über CO<sub>2</sub></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link btn nav-btn fs-4" href="#team">Team</a>
+          </li>
+        </ul>
+  
+        <!-- Logo -->
+        <a class="navbar-brand d-none d-lg-block logo" href="#home-header">
+          <img src="./img/Logo_Natur3t.png" alt="Logo der Website" class="img-fluid" width="75" height="75">
+        </a>
+      </div>
+    </div>
+  </nav>
+  
+  <!-- Secktion 1: Unsere Mission -->
+  <section id="our-mission" class="our-mission-section py-5 bg-white mission roboto-bold">
+    <div class="container">    
+        <div class="row">
+
+          <!-- Linke Spalte: Icon -->
+          <div class="col-lg-6 col-md-6 col-12 d-flex justify-content-center align-items-center p-3">
+            <div class="d-flex flex-column align-items-center gap-3">
+              <div class="mission-icon text-center">
+                <i class="fa-solid fa-eye text-success custom-icon"></i>
+              </div>
+            </div>
+          </div>
+
+          <!-- Rechte Spalte: Beschreibung der Mission -->
+          <div class="col-lg-6 col-md-6 col-12 p-lg-3 p-md-2 p-2">
+            <h3 class="mission-title text-center text-md-start">
+              <span class="text-black roboto-bold">
+                <span class="fw-light">Unsere</span> 
+                <span class="fw-bold">Mission</span>
+              </span>
+            </h3>
+            <p class="fw-bold text-secondary custom-font-style">
+              Als gemeinnützige Organisation setzen wir uns für die Reduktion des CO<sub>2</sub>-Ausstoßes und den Kampf gegen die Erderwärmung ein. Unsere Mission ist es, durch den Einsatz von erneuerbaren Energien, klimafreundlicher Mobilität und nachhaltigen Produktionsprozessen eine klimaneutrale Zukunft zu schaffen.
+              <br><br>
+              Wir fördern Aufforstungsprojekte, grüne Technologien und setzen uns aktiv für die Sensibilisierung der Gesellschaft ein. Durch Bildungsinitiativen, Aufklärungskampagnen und Partnerschaften ermutigen wir Menschen, Unternehmen und Regierungen zu einem klimafreundlichen Handeln. Unser Ziel ist eine gerechte und nachhaltige Welt, in der Mensch und Natur im Einklang leben können.
+            </p>
+          </div>
+        </div>    
+    </div>
+  </section>
+
+  <!-- Sektion 2: Über CO2 -->
+  <section id="about-co2" class="about-co2-section py-5 bg-light mission roboto-bold">
+    <div class="container">
+      <div class="row">
+          <!-- Linke Spalte: Icon -->
+          <div class="col-lg-6 col-md-6 col-12 p-lg-3 p-md-2 p-2">
+            <h3 class="mission-title text-center text-md-start">
+              <span class="text-black roboto-bold">
+                <span class="fw-light">Über</span> 
+                <span class="fw-bold">CO<sub>2</sub></span>
+              </span>
+            </h3>
+            <p class="fw-bold text-secondary custom-font-style">
+              CO<sub>2</sub> (Kohlendioxid) ist ein Treibhausgas, das bei der Verbrennung fossiler Brennstoffe, in der Industrie und durch Abholzung freigesetzt wird. Es speichert Wärme in der Atmosphäre und ist der Hauptverursacher der globalen Erderwärmung, die zu extremen Wetterereignissen, Gletscherschmelze und einem steigenden Meeresspiegel führt.
+              <br><br>
+              Um CO<sub>2</sub> zu reduzieren, setzen wir auf erneuerbare Energien wie Solar- und Windkraft, nachhaltige Mobilität (Fahrrad, Elektroautos, öffentlicher Verkehr) sowie Energieeffizienz in Gebäuden und Geräten. Aufforstung und Waldschutz spielen ebenfalls eine wichtige Rolle, da Bäume CO<sub>2</sub> speichern. Jeder kann helfen: Fahrrad statt Auto, Recycling, Energie sparen und der Kauf nachhaltiger Produkte sind einfache Schritte.
+            </p>
+          </div>
+          
+          <!-- Rechte Spalte: Beschreibung der Mission -->
+          <div class="col-lg-6 col-md-6 col-12 d-flex justify-content-center align-items-center p-3">
+            <div class="d-flex flex-column align-items-center gap-3">
+              <div class="mission-icon text-center">
+                <i class="fa-solid fa-earth-americas text-success custom-icon"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
+  </section>
+
+  <!-- Sektion 3: Team -->
+<section id="team" class="team-section py-5 bg-white mission roboto-bold">
+  <div class="container">
+
+    <!-- Überschrift und Beschreibung -->
+    <div class="row mb-5">
+      <div class="col-12 text-center">
+        <h3 class="mission-title">
+          <span class="display-5 text-black">
+            <span class="fw-light"style="text-shadow: 2px 2px 4px rgba(0, 110, 0, 0.2);">Unser</span> 
+            <span class="fw-bold" style="text-shadow: 3px 3px 6px rgba(0, 110, 0, 0.3);"">Team</span>
+          </span>
+        </h3>
+      </div>
+    </div>
+
+    <!-- Dynamische Mitarbeiterkarten aus der Datei mitarbeiter.js -->
+    <div class="container">
+      <div class="row g-4 justify-content-center" id="team-container">
+        <!-- Mitarbeiterkarten werden hier eingefügt -->
+      </div>
+    </div>
+  </div>
+</section>
+
+  </section>
+  <!-- 
+   Abschnitt: Tabelle der größten CO₂-Verursacher  mit Vue.js
+   Die Daten befinden sich in der Datei data_company.js. 
+   Die Soertierfunktionen befinden sich in der Datei table_company.js
+  -->
+  <section id="statistik">
+    
+    <!-- Dynamische Navbar je nach Bedarf automatisch LTR oder RTL --> 
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top" id="statistik-navbar" data-rtl="true">
+      <div class="container-fluid">
+
+        <!-- Markenname -->
+        <a class="navbar-brand roboto-bold fs-3" href="#home-header">GRoW</a>
+
+        <!-- Hamburger-Menü -->
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarStatistik"
+          aria-controls="navbarStatistik"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Navigationselemente -->
+        <div class="collapse navbar-collapse" id="navbarStatistik">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link btn nav-btn fs-4" href="#unternehmen">Unternehmen</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link btn nav-btn fs-4" href="#laender">Länder</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link btn nav-btn fs-4" href="#proKopf">Pro Kopf</a>
+            </li>
+          </ul>
+
+          <!-- Logo auf der rechten Seite -->
+          <a class="navbar-brand d-none d-lg-block logo" href="#home-header">
+            <img
+              src="./img/Logo_Natur3t.png"
+              alt="Logo der Website"
+              class="img-fluid"
+              width="75"
+              height="75"
+            />
+          </a>
+        </div>
+      </div>
+    </nav>
+
+    <section id="unternehmen" class="py-5 bg-success roboto-bold">
+
+      <!-- Vue.js App Container -->
+      <div id="app" class="container flex-grow-1 d-flex flex-column justify-content-center statistik">
+
+      <!-- Titel der Tabelle -->
+      <section class="table-head text-center mt-5">
+        <span class="display-5 text-black">
+
+          <!-- Text: "50 größten Verursacher" -->
+          <span class="fw-light" style="text-shadow: 2px 2px 4px rgba(250, 250, 250, 0.2);">50 größten</span>
+          <span class="fw-bold" style="text-shadow: 3px 3px 6px rgba(255, 255, 255, 0.3);"> Verursacher</span>
+        </span>
+      </section>
+
+      <!-- Container für das Suchfeld -->
+    <div class="my-4" id="search-container">
+      <!-- Eingabefeld für die Suche -->
+      <!-- type="text": Legt den Eingabetyp als Textfeld fest -->
+      <!-- v-model="searchTerm": Vue.js-Direktive: Verknüpft den Eingabewert mit der Variable `searchTerm` -->
+      <!-- class="form-control": Bootstrap-Klasse für ein formatiertes und responsives Eingabefeld -->
+      <!-- placeholder="Suche ...": Platzhaltertext, der angezeigt wird, wenn das Eingabefeld leer ist -->
+      <!-- autocomplete="off": Deaktiviert die automatische Vervollständigung durch den Browser -->
+      <!-- @click="goToPage(1)" : Vue.js-Ereignis: Ruft die Methode `goToPage(1)` auf, wenn auf das Feld geklickt wird -->
+      <input
+        type="text"                      
+        v-model="searchTerm"             
+        class="form-control"             
+        placeholder="Suche ..."          
+        autocomplete="off"              
+        @click="goToPage(1)"             
+      />
+    </div>
+
+      <!-- Tabelle -->
+      <div class="table-container">
+        <!-- Tabelle mit fixiertem Layout und Hover-Effekt -->
+        <table class="table table-hover table-fixed-layout">
+          <!-- Tabellenkopf -->
+          <thead class="table-dark">
+            <tr>
+              <!-- Spalte "Rang" mit Sortierfunktion -->
+              <th class="fs-6 fs-md-4 fs-lg-2" @click="sortTable('rank')">
+                Rang
+                <!-- Sortierungssymbol (▲ oder ▼), das erscheint, wenn die Spalte aktiv sortiert wird -->
+                <span v-if="sortColumn === 'rank'">
+                  {{ sortDirection === 'asc' ? '▲' : '▼' }}
+                </span>
+              </th>
+              
+              <!-- Spalte "Unternehmen" mit Sortierfunktion -->
+              <th class="fs-6 fs-md-4 fs-lg-2" @click="sortTable('company')">
+                Unternehmen
+                <span v-if="sortColumn === 'company'">
+                  {{ sortDirection === 'asc' ? '▲' : '▼' }}
+                </span>
+              </th>
+              
+              <!-- Spalte "Land" mit Sortierfunktion -->
+              <th class="fs-6 fs-md-4 fs-lg-2" @click="sortTable('country')">
+                Land
+                <span v-if="sortColumn === 'country'">
+                  {{ sortDirection === 'asc' ? '▲' : '▼' }}
+                </span>
+              </th>
+              
+              <!-- Spalte "Emissionen" mit Sortierfunktion -->
+              <th class="fs-6 fs-md-4 fs-lg-2" @click="sortTable('emissions')">
+                Emissionen (Mrd. Tonnen CO₂)
+                <span v-if="sortColumn === 'emissions'">
+                  {{ sortDirection === 'asc' ? '▲' : '▼' }}
+                </span>
+              </th>
+            </tr>
+          </thead>
+          
+          <!-- Tabellenkörper -->
+          <tbody>
+            <!-- Dynamische Generierung der Zeilen basierend auf `paginatedData` -->
+            <!-- Jede Zeile hat eine eindeutige `key` und erhält eine Klasse `empty-row`, wenn die Daten leer sind -->
+            <tr
+              v-for="row in paginatedData"
+              :key="row.rank || 'empty'"
+              :class="{ 'empty-row': !row.rank }"
+            >
+              <td>{{ row.rank }}</td> <!-- Rang -->
+              <td class="fs-6 fs-md-5">{{ row.company }}</td> <!-- Unternehmen -->
+              <td class="fs-6 fs-md-5">{{ row.country }}</td> <!-- Land -->
+              <td class="fs-6 fs-md-5">{{ row.emissions }}</td> <!-- Emissionen -->
+            </tr>
+          </tbody>
+        </table>
+      
+        <!-- Pagination-Bereich -->
+        <nav id="pagination-container" class="d-flex justify-content-center mt-3">
+          <ul class="pagination">
+            <!-- Zurück-Button -->
+            <li class="page-item" :class="{ disabled: currentPage === 1 }">
+              <button class="page-link text-success" @click="prevPage">Zurück</button>
+            </li>
+            
+            <!-- Dynamische Seitennummerierung -->
+            <!-- Jede Seite erhält eine `key` und die aktive Seite bekommt die Klasse `active` -->
+            <li
+              class="page-item"
+              v-for="page in totalPages"
+              :key="page"
+              :class="{ active: currentPage === page }"
+            >
+              <button class="page-link text-success" @click="goToPage(page)">{{ page }}</button>
+            </li>
+            
+            <!-- Weiter-Button -->
+            <li class="page-item" :class="{ disabled: currentPage === totalPages }">
+              <button class="page-link text-success" @click="nextPage">Weiter</button>
+            </li>
+          </ul>
+        </nav>
+      </div>   
+       
+  </div>
+    
+    </section>
+
+    <!-- JavaScript-Datei -->    
+    <script src="./table_company.js" type="module"></script>
+    
+
+    <section id="laender" class="py-5 bg-white roboto-bold statistik">
+      <div class="container flex-grow-1 d-flex flex-column justify-content-center">
+        <section class="table-head text-center my-5">
+          <span class="display-5 text-success">
+
+            <!-- Text: "50 größten Verursacher" -->
+            <span class="fw-light" style="text-shadow: 2px 2px 4px rgba(0, 110, 0, 0.2);">10 größten CO<sub>2</sub> ausstoßenden</span>
+            <span class="fw-bold" style="text-shadow: 3px 3px 6px rgba(0, 110, 0, 0.3);">Länder</span>
+          </span>
+        </section>
+
+        <div class="table-container">
+          <table class="table table-striped table-bordered">
+            <thead class="table-dark">
+              <tr>
+                <th class="fs-6 fs-md-4 fs-lg-2">Rang</th>
+                <th class="fs-6 fs-md-4 fs-lg-2">Land</th>
+                <th class="fs-6 fs-md-4 fs-lg-2">CO<sub>2</sub> Emissionen(in Mt)</th>
+              </tr>
+            </thead>
+            <tbody id="tableBody" class="fs-6 fs-md-5"></tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <script src="./data_country.js"></script>
+    <script src="./table_country.js"></script>
+
+    <section id="proKopf" class="py-5 bg-success roboto-bold statistik">
+      <div class="container flex-grow-1 d-flex flex-column justify-content-center">
+        <section class="table-head text-center my-5">
+          <span class="display-5 text-black">
+            <span class="fw-light" style="text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.2);">10 größten CO<sub>2</sub> Länder</span>
+            <span class="fw-bold" style="text-shadow: 3px 3px 6px rgba(0255, 255, 255, 0.3);">pro Kopf</span>
+          </span>
+        </section>
+        <div class="table-container"> <!-- Wrapper für responsives Verhalten -->
+          <table class="table table-striped table-bordered">
+            <thead class="table-dark">
+              <tr>
+                <th class="fs-6 fs-md-4 fs-lg-2">Rang</th>
+                <th class="fs-6 fs-md-4 fs-lg-2">Land</th>
+                <th class="fs-6 fs-md-4 fs-lg-2">CO<sub>2</sub> Emission pro Einwohner (in t)</th>
+              </tr>
+            </thead>
+            <tbody id="tableBodyPerCapita" class="fs-6 fs-md-5">
+              <!-- Dynamische Daten aus data3.js -->
+            </tbody>
+          </table>
+        </div>
+    </section>
+    <script src="./data_capita.js"></script>
+    <script src="./table_capita.js" defer></script>
+
+  </section>
+
+  <!-- Kontaktbereich -->
+  <section id="kontakt">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-success sticky-top" id="kontakt-navbar" data-rtl="true">
+      <div class="container-fluid">
+    
+        <!-- Markenname -->
+        <a class="navbar-brand roboto-bold fs-3" href="#home-header">GRoW</a>
+    
+        <!-- Hamburger-Menü -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarKontakt" aria-controls="navbarKontakt" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+    
+        <!-- Navigationselemente -->
+        <div class="collapse navbar-collapse" id="navbarKontakt">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link btn nav-btn fs-4" href="#formular">Deine Nachricht</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link btn nav-btn fs-4" href="#partners">Unsere Partner</a>
+            </li>          
+          </ul>
+      
+        <!-- Logo auf der rechten Seite-->
+        <a class="navbar-brand d-none d-lg-block logo" href="#home-header">
+          <img src="./img/Logo_Natur3t.png" alt="Logo der Website" class="img-fluid" width="75" height="75">
+        </a>
+      </div>
+    </div> 
+    </nav>
+
+  <!-- Sektion Formular -->
+  <section id="formular" class="py-5">
+
+    <!-- Container für das Formular, sorgt für zentrierten Inhalt -->
+    <div class="container hero">
+
+      <!-- Formularelemente mit zusätzlichem Styling und Padding -->
+      <div class="form-container py-5 roboto-bold">
+
+        <!-- Überschrift des Formulars -->
+        <h2 class="text-center"><strong>Kontaktformular</strong></h2>
+
+        <!-- 
+        Formular mit ID für die Validierung 
+        'novalidate` deaktiviert standardmäßige Browser-Validierung 
+        -->
+        <form id="contactForm" novalidate> 
+
+          <!-- 
+          Eingabefeld für Name 
+          Bootstrap-Klasse für Styling 'class=form-control'
+          Eindeutige ID für Validierung 'id=name'
+          Name des Eingabefelds name='name'
+          Markiert das Feld als Pflichtfeld 'required'
+          Einschränkung der Eingabelänge 'minlength="3" maxlength="50"'
+          -->
+          <div class="mb-3">
+            <label for="name" class="form-label">Name</label>
+            <input 
+              type="text" 
+              class="form-control" 
+              id="name" 
+              name="name" 
+              required 
+              minlength="3" maxlength="50" 
+              placeholder="Ihr Name"> 
+
+            <!-- Fehlerhinweis bei ungültiger Eingabe -->
+            <div class="invalid-feedback">Bitte geben Sie einen gültigen Namen ein (mindestens 3 Zeichen).</div>
+            </div>
+
+            <!-- Eingabefeld für E-Mail-Adresse -->
+            <div class="mb-3">
+              <label for="email" class="form-label">E-Mail-Adresse</label>
+              <input 
+                type="email" 
+                class="form-control" 
+                id="email" 
+                name="email" 
+                required 
+                placeholder="name@example.com">
+
+              <!-- Fehlerhinweis bei ungültiger Eingabe -->
+              <div class="invalid-feedback">Bitte geben Sie eine gültige E-Mail-Adresse ein.</div>
+            </div>
+
+          <!-- Eingabefeld für Betreff -->
+          <div class="mb-3">
+            <label for="subject" class="form-label">Betreff</label>
+            <input 
+              type="text" 
+              class="form-control" 
+              id="subject" 
+              name="subject" 
+              required 
+              minlength="3" maxlength="100" 
+              placeholder="Betreff">
+
+            <!-- Fehlerhinweis bei ungültiger Eingabe -->
+            <div class="invalid-feedback">Bitte geben Sie einen gültigen Betreff ein (mindestens 3 Zeichen).</div>
+          </div>
+
+          <!-- Textfeld für Nachricht -->
+          <div class="mb-3">
+            <label for="message" class="form-label">Nachricht</label>
+            <textarea 
+              class="form-control" 
+              id="message" 
+              name="message" 
+              required 
+              rows="5" 
+              minlength="10" maxlength="500" 
+              placeholder="Ihre Nachricht"></textarea>
+
+            <!-- Fehlerhinweis bei ungültiger Eingabe -->
+            <div class="invalid-feedback">Bitte geben Sie eine gültige Nachricht ein (mindestens 10 Zeichen).</div>
+            </div>
+
+          <!-- 
+          Absenden-Button + Home-Button
+          Legt fest, dass es sich um einen Absende-Button handelt 'type=submit'
+          -->
+          
+          <div class="d-flex justify-content-left align-items-end gap-5 mt-3">
+
+            <!-- Absenden-Button -->
+            <button 
+              type="submit" 
+              class="btn btn-danger btn-lg">
+              Absenden
+            </button>
+
+            <!-- Home Button -->
+            <a href="#home" class="btn btn-success btn-lg">
+              Home
+            </a>
+          </div>
+
+        </form>
+
+        <!-- Bereich für die Formularantwort -->
+        <div id="formResponse" class="mt-3"></div>
+      </div>
+    </div>
+
+  </section>
+
+  <!--Sektion Partnerunternehmen -->
+  <section id="partners" class="team-py-5 bg-light roboto-bold hero">
+
+    <div class="container pt-5">
+      
+        <!-- Text: Überschrift und Beschreibund -->        
+        <div class="row mb-5 d-flex align-items-center justify-content-center"
+          <div class="col-12 text-center">
+            <h3 class="partner-title pt-5" style="text-align: center;">
+              <span class="display-5 text-success">
+                <span class="fw-light" style="text-shadow: 2px 2px 4px rgba(0, 110, 0, 0.2);">Unserer</span>
+                <span class="fw-bold" style="text-shadow: 3px 3px 6px rgba(0, 110, 0, 0.3);">Partner</span>
+              </span>
+            </h3>
+              <p class="text-center text-muted roboto-light fs-5">
+              Treffe und unterstütze andere Organisation die unsere Mission unterstützen!
+              </p>
+          </div>
+        </div>                
+                  
+      <!-- Partner-Cards aus der Datei partner.js -->
+      <div class="container">
+        <div class="row g-4 justify-content-start" id="partnerCards">
+          <!-- Partner-Cards werden hier eingefügt -->
+        </div>
+      </div>
+    </div>
+  </section>
+</section>
+  
+</main>
+
+<!-- Footer: Enthält rechtliche Hinweise, Kontaktinformationen und Social Media Links -->
+<footer class="bg-success text-white py-5 roboto-bold">
+  
+  <!-- Container für den Footer-Inhalt -->
+  <div class="container">
+      <div class="row">
+          
+        <!-- Spalte 1: Rechtliche Hinweise -->
+          <div class="col-md-6 text-white-50">
+              <h5>Rechtliche Hinweise</h5>
+
+              <!-- Liste der rechtlichen Links -->
+              <!-- `list-unstyled` entfernt Aufzählungszeichen -->
+              <ul class="list-unstyled"> 
+                  <li>
+
+                      <!-- Link zum Impressum -->
+                      <a href="legal.html" class="text-white text-decoration-none">Impressum</a> 
+                  </li>
+                  <li>
+
+                      <!-- Link zur Datenschutzerklärung -->
+                      <a href="legal.html" class="text-white text-decoration-none">Datenschutz</a> 
+                  </li>
+                  <li>
+
+                      <!-- Link zu den Nutzungsbedingungen -->
+                      <a href="legal.html" class="text-white text-decoration-none">Nutzungsbedingungen</a> 
+                  </li>
+              </ul>
+          </div>
+
+          <!-- Spalte 2: Kontaktinformationen -->
+          <div class="col-md-6">
+              <h5 class="text-white-50">Kontakt</h5>
+
+              <!-- Kontaktinformationen: Adresse, Telefonnummer und E-Mail -->
+              <p>
+
+                  <!-- Straßenadresse -->
+                  Musterstr. 88<br>
+
+                  <!-- Stadt und PLZ -->                   
+                  12345 Musterhausen<br> 
+
+                  <!-- Telefon -->
+                  Telefon: 
+                  <a href="tel:+491234567890" class="text-white text-decoration-none">+49 123 456 7890</a>
+                  <br>
+
+                  <!-- E-Mail -->
+                  E-Mail: 
+                  <a href="mailto:info@grow.com" class="text-white text-decoration-none">info@grow.com</a> 
+              </p>
+          </div>
+      </div>
+
+      <!-- Zweite Reihe: Social Media Icons -->
+      <div class="row mt-3">
+          <div class="col-12 text-center">
+
+              <!-- Social Media Links -->
+              <!-- Instagram-Icon -->
+              <a href="https://instagram.com" target="_blank" class="text-white text-decoration-none me-3">
+                  <i class="fa-brands fa-instagram fa-2x"></i> 
+              </a>
+
+               <!-- YouTube-Icon -->
+              <a href="https://youtube.com" target="_blank" class="text-white text-decoration-none me-3">
+                  <i class="fa-brands fa-youtube fa-2x"></i> 
+              </a>
+
+               <!-- Twitter-Icon -->
+              <a href="https://twitter.com" target="_blank" class="text-white text-decoration-none">
+                  <i class="fa-brands fa-x-twitter fa-2x"></i> 
+              </a>
+          </div>
+      </div>
+
+      <!-- Copyright-Bereich -->
+      <div class="text-center mt-4">
+          <!-- Copyright-Hinweis -->
+          <p class="mb-0">&copy; 2024 GRoW. Alle Rechte vorbehalten.</p> 
+      </div>
+  </div>
+</footer>
+
+</body>
+
+</html>

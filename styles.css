@@ -1,0 +1,120 @@
+/* ========== General Styles ========== */
+
+/* Grundstil für den gesamten Body */
+/* Definiert die Standard-Schriftart für die gesamte Seite */
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+/* Standard-Stile für die Container */
+/* Maximale Breite des Containers mit automatischer Zentrierung */
+.container {
+  width: 100%;
+  max-width: 1200px; /* Maximale Breite */
+  margin: 0 auto; /* Zentrierung */
+  padding: 0 15px; /* Innenabstand an den Seiten */
+}
+
+/* ========== Header Styles ========== */
+
+/* Header-Bereich mit Vollbild-Hintergrundbild */
+/* Gestaltet den oberen Header-Bereich mit einem Hintergrundbild */
+#home-header {
+  height: 100vh; /* Höhe des Headers entspricht der Bildschirm-Höhe */
+  background-image:  url('./img/natur2.jpg'); /* Hintergrundbild */
+  background-size: cover; /* Bild skaliert proportional, um den gesamten Bereich abzudecken */
+  background-position: center; /* Zentriert das Bild */
+  background-repeat: no-repeat; /* Verhindert Wiederholung des Bildes */
+  position: relative; /* Wichtig für das Overlay */
+  display: flex; /* Ermöglicht Flexbox für Layout */
+  flex-direction: column; /* Elemente in einer Spalte anordnen */
+  justify-content: space-between; /* Platz zwischen den Elementen */
+}
+
+/* Overlay über das Hintergrundbild */
+/* Halbtransparenter schwarzer Overlay-Effekt */
+#home-header::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%; /* Über die gesamte Breite */
+  height: 100%; /* Über die gesamte Höhe */
+  background: rgba(0, 0, 0, 0.1); /* Halbtransparenter schwarzer Hintergrund */
+  z-index: 1; /* Overlay liegt über dem Hintergrund */
+}
+
+/* ========== Hero Section Styles ========== */
+
+/* Hero-Sektion */
+/* Definiert den visuellen Bereich für die hero-Sektion */
+.hero {
+  height: 100vh; /* Höhe entspricht der gesamten Höhe des Viewports */
+  background-size: cover; /* Hintergrundbild skaliert proportional */
+  background-position: center; /* Hintergrundbild wird zentriert */
+  background-repeat: no-repeat; /* Hintergrundbild wird nicht wiederholt */
+}
+
+.hero-title {
+  font-size: 6rem; /* Schriftgröße des Haupttitels */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 1); /* Schatten für bessere Lesbarkeit */
+}
+
+.hero-subtitle {
+  font-size: 4rem; /* Schriftgröße des Untertitels */
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 1); /* Schatten für bessere Lesbarkeit */
+}
+
+/* ========== Mission Styles ========== */
+
+/* Stile für die Mission-Sektion */
+/* Zentriert den Inhalt vertikal und horizontal */
+.mission {
+  height: 100vh; /* Volle Bildschirmhöhe */
+  display: flex; /* Flexbox für Layout */
+  flex-direction: column; /* Elemente in einer Spalte anordnen */
+  justify-content: center; /* Zentrierung in vertikaler Richtung */
+  align-items: center; /* Zentrierung in horizontaler Richtung */
+  text-align: center; /* Textzentrierung */
+  padding: 2rem; /* Optionaler Abstand */
+}
+
+/* Zusätzliche Textstile für Mission-Absätze */
+.custom-font-style {
+  text-align: justify; /* Blocksatz für saubere Ausrichtung */
+  line-height: 1.6; /* Erhöhte Zeilenhöhe für bessere Lesbarkeit */
+  word-spacing: 0.05rem; /* Leicht erhöhter Wortabstand */
+}
+
+/* ========== Statistik Styles ========== */
+
+/* Sektion Statistik */
+/* Layout für die Statistik-Sektion */
+.statistik {
+  display: flex; /* Flexbox für Layout */
+  flex-direction: column; /* Elemente vertikal anordnen */
+  height: 100vh; /* Gesamte Bildschirmhöhe */
+  margin: 0; /* Keine äußeren Abstände */
+  padding: 0; /* Keine inneren Abstände */
+  box-sizing: border-box; /* Padding und Border werden in die Größe eingerechnet */
+}
+
+/* ========== Unternehmen Styles ========== */
+
+/* Hauptinhalt für die Unternehmens-Sektion */
+/* Flexibles Layout für dynamische Inhalte */
+#unternehmen {
+  display: flex; /* Flexbox für Layout */
+  flex-direction: column; /* Elemente vertikal anordnen */
+  height: 100%; /* Volle Höhe ausfüllen */
+}
+
+
+
+
+
+
+
+
+
+

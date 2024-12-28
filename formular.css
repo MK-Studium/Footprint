@@ -1,0 +1,55 @@
+/* ========== Form Styles ========== */
+
+/* Layout der Formular-Box */
+/* Stile für die Container-Box des Formulars, die das Layout und das visuelle Erscheinungsbild des Formulars definiert */
+.form-container {
+  max-height: 600px; /* Maximale Höhe des Formularcontainers */
+  margin: 50px auto; /* Zentriert das Formular horizontal mit automatischen Seitenabständen */
+  background-color: whitesmoke; /* Hintergrundfarbe des Containers */
+  padding: 30px; /* Innenabstand des Containers */
+  border: 10px; /* Standard-Breite für den Rahmen */
+  border-radius: 10px; /* Abrundung der Ecken für ein weicheres Aussehen */
+  box-shadow: 0 10px 25px rgba(0, 110, 0, 0.1); /* Schatteneffekt für eine leichte Tiefe */
+}
+
+/* ========== Input Field Styles ========== */
+
+/* Eingabefeld-Stile */
+/* Grundlegendes Styling für die Eingabefelder des Formulars */
+input.form-control {
+  width: 50%; /* Die Breite des Eingabefelds beträgt 50% des Containers */
+  min-width: 200px; /* Mindestbreite für kleine Bildschirme */
+  border-radius: 10px; /* Abrundung der Ecken des Eingabefelds */
+  padding: 10px 20px; /* Innenabstand (oben/unten: 10px, links/rechts: 20px) */
+  border: 10px; /* Standard-Breite des Rahmens (ohne Farbfestlegung) */
+  font-size: 16px; /* Schriftgröße innerhalb des Eingabefelds */
+  border: 2px solid whitesmoke; /* Standardfarbe des Rahmens */
+  transition: all 0.3s ease; /* Weicher Übergang für Änderungen an Stilen wie Rahmenfarbe */
+}
+
+/* Validierung: Ungültige Eingabe */
+/* Stile, die angewendet werden, wenn das Eingabefeld einen ungültigen Wert hat */
+.form-control:invalid {
+  border-color: red; /* Der Rahmen wird rot angezeigt */
+}
+
+/* Validierung: Gültige Eingabe */
+/* Stile, die angewendet werden, wenn das Eingabefeld einen gültigen Wert hat */
+.form-control:valid {
+  border-color: green; /* Der Rahmen wird grün angezeigt */
+}
+
+/* Abstände und andere Layout-Anpassungen */
+/* Stile für den Submit-Button des Formulars */
+button[type="submit"] {
+  margin-top: 20px; /* Abstand nach oben zum vorherigen Element */
+}
+
+/* Eingabefeld: Fokus-Effekte */
+/* Stile, die angewendet werden, wenn das Eingabefeld den Fokus erhält */
+input.form-control:focus {
+  border-color: rgb(0, 110, 0); /* Rahmenfarbe wird grün, wenn das Feld fokussiert ist */
+  box-shadow: 0 0 5px rgb(0, 110, 0); /* Ein subtiler grünlicher Schein um das Eingabefeld */
+}
+
+

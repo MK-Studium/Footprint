@@ -1,0 +1,162 @@
+/* ========== Kleinere Bildschirme (xs) ========== */
+/* Breakpoint: Maximalbreite 576px */
+@media (max-width: 576px) {
+
+  /* Startseite Überschrift */
+  .hero-title {
+    font-size: 2rem; /* Kleinere Schriftgröße */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 1); /* Schatteneffekt */
+  }
+  .hero-subtitle {
+    font-size: 1.75rem; /* Kleinere Schriftgröße */
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 1);
+  }
+
+  /* Mission */
+  .mission-title {
+    font-size: 1.5rem;
+    padding: 3rem;
+  }
+  .custom-icon {
+    font-size: 3rem; /* Kleinere Icon-Größe */
+  }
+
+  /* Card-Größen */
+  #team, #about-co2, #our-mission, #statistik, #partners {
+    height: auto; /* Karten passen sich an */
+    text-align: justify; /* Text wird gleichmäßig verteilt */
+  }
+  #team {
+    text-align: center; /* Team spezifisch zentriert */
+  }
+  
+  .mission .card img {
+    max-height: auto; /* Automatische Bildhöhe */
+    object-fit: cover; /* Bild bleibt skalierbar */
+  }
+  .card-title {
+    font-size: 1rem; /* Kleinere Schriftgröße */
+  }
+  .card-text {
+    font-size: 0.7rem; /* Noch kleinere Schriftgröße */
+  }
+
+  /* Tabelle */
+  .table-container {
+    font-size: small; /* Kleinere Schriftgröße */
+  }
+  .responsive-header {
+    font-size: 0.875rem; /* Leicht reduzierte Header-Schriftgröße */
+  }
+
+  /* Größe Font Awesome */
+  .fa-solid {
+    font-size: 3rem; /* Kleinere Icons für kleine Bildschirme */
+  }
+}
+
+/* ========== Kleine Tablets (sm) ========== */
+/* Breakpoint: Minimalbreite 768px */
+@media (min-width: 768px) {
+
+  /* Startseite Überschrift */
+  .hero-title {
+    font-size: 2.5rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 1);
+  }
+  .hero-subtitle {
+    font-size: 2rem;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 1);
+  }
+
+  /* Mission */
+  #mission {
+    flex-direction: column; /* Inhalte werden vertikal gestapelt */
+  }
+  .mission-title {
+    font-size: 1.8rem;
+    text-align: center; /* Zentrierter Text */
+  }
+  .misson p {
+    font-size: 0.5rem; /* Kleinere Schrift für Beschreibung */
+  }
+  .custom-icon {
+    font-size: 5rem; /* Größere Icons */
+  }
+
+  /* Card-Größen */
+  .card-img-top {
+    max-width: 70px; /* Beschränkte Bildbreite */
+  }
+
+  
+  
+  /* Statistik */
+  #statistik {
+    height: auto; /* Automatische Höhe */
+  }
+
+  /* Größe Font Awesome */
+  .fa-solid {
+    font-size: 4rem; /* Anpassung der Icon-Größe */
+  }
+}
+
+/* ========== Tablets (md) ========== */
+/* Breakpoint: Minimalbreite 992px */
+@media (min-width: 992px) {
+
+  /* Startseite Überschrift */
+  .hero-title {
+    font-size: 4rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 1);
+  }
+  .hero-subtitle {
+    font-size: 2.5rem;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 1);
+  }
+
+  /* Mission */
+  .mission-title {
+    font-size: 2rem; /* Größere Überschrift */
+  }
+  .custom-font-style {
+    font-size: 1rem; /* Standardisierte Schriftgröße */
+  }
+  .custom-icon {
+    font-size: 8rem; /* Große Icons */
+  }
+
+}
+
+/* ========== Desktop (lg) ========== */
+/* Breakpoint: Minimalbreite 1200px */
+@media (min-width: 1200px) {
+
+  /* Startseite Überschrift */
+  .hero-title {
+    font-size: 5rem; /* Sehr große Überschrift */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 1);
+  }
+  .hero-subtitle {
+    font-size: 3rem;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 1);
+  }
+
+  /* Mission */
+  .mission-title {
+    font-size: 3rem; /* Größte Mission-Überschrift */
+  }
+  .custom-font-style {
+    font-size: 1.25rem; /* Standardisierte größere Schriftgröße */
+  }
+  .custom-icon {
+    font-size: 10rem; /* Sehr große Icons */
+  }
+}
+
+/* ========== Große Bildschirme (xl) ========== */
+/* Breakpoint: Minimalbreite 1201px */
+@media (min-width: 1201px) {
+  /* Platzhalter für mögliche Anpassungen */
+}
